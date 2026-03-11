@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import ToggleSlider from './component/Toggleslider';
-import DateDropdown from './component/DateDropDown';
-import EmptyState from './component/EmptyState';
-import StrategyCard from './component/StatergyCard';
+import ToggleSlider from './components/Toggleslider';
+import DateDropdown from './components/DateDropDown';
+import EmptyState from './components/EmptyState';
+import StrategyCard from './components/StatergyCard';
 import { dateArray, strategyArray } from './data';
 import { getStrategyCounts } from './utils';
 

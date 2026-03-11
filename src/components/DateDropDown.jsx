@@ -11,7 +11,7 @@ export default function DateDropdown({ dates, selected, onChange }) {
         className="w-full flex justify-between items-center px-4 py-3 border border-gray-300 rounded-xl bg-white text-sm font-medium"
       >
         <span>{formatDate(selected)}</span>
-        <span className={`transition-transform ${open ? 'rotate-180' : ''}`}>▼</span>
+        <span className={` text-blue-700 transition-transform ${open ? 'rotate-180 ' : ''}`}>▼</span>
       </button>
 
       {open && (
