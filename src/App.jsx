@@ -7,15 +7,14 @@ import { dateArray, strategyArray } from './data';
 import { getStrategyCounts } from './utils';
 
 export default function App() {
-  const [activeView, setActiveView] = useState('Bullish');       // Default  Bullish
-  const [selectedDate, setSelectedDate] = useState(dateArray[0]); // Default first date
+  const [activeView, setActiveView] = useState('Bullish');
+  const [selectedDate, setSelectedDate] = useState(dateArray[0]); 
 
 
   const viewData = strategyArray.find((s) => s.View === activeView);
   const strategies = viewData?.Value?.[selectedDate] || [];
   const strategyCounts = getStrategyCounts(strategies);
 
-  // Handle view change — reset date to first
   const handleViewChange = (view) => {
     setActiveView(view);
   };
